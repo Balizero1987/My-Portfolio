@@ -71,18 +71,18 @@ function Contact() {
   };
 
   return (
-    <main className={`flex flex-col items-center justify-between px-7  md:px-32 py-24`}>
+    <main className={`flex flex-col items-center justify-between px-7  md:px-32 py-24 overflow-hidden`}>
       
       <div className="absolute z-[-1] left-1/4 before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-sky-300 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-sky-400 before:dark:opacity-10 after:dark:from-cyan-500 after:dark:via-[#68f0ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
       </div>
       <div className="content w-full md:w-3/4 grid grid-cols-1 lg:grid-cols-2 gap-x-12 gap-y-8">
         <div className="flex flex-col gap-y-7">
           <div className="flex flex-col gap-y-2">
-            <h1 className={`font-bold text-6xl ${inter.className}`}>Contact</h1>
+            <h1 className={`font-bold text-5xl tracking-tighter ${inter.className}`}>Contact</h1>
           </div>
           <ul>
-            <li className='w-fit gap-x-4 text-lg flex justify-center items-center text-wrap'><BiLogoGmail /> <p className="text-wrap">elvinafirmansyah@gmail.com</p></li>
-            <li className='w-fit '><a className="gap-x-4 text-lg flex justify-center items-center hover:underline hover:text-sky-400 text-wrap" href="https://api.whatsapp.com/send?phone=6289630873931"><FaPhone /> +62 0896-3087-3931</a></li>
+            <li className='w-fit gap-x-4 text-lg flex justify-center items-center text-wrap tracking-tight'><BiLogoGmail /> <p className="text-wrap">elvinafirmansyah@gmail.com</p></li>
+            <li className='w-fit '><a className="gap-x-4 text-lg flex justify-center items-center hover:underline hover:text-sky-400 text-wrap tracking-tight" href="https://api.whatsapp.com/send?phone=6289630873931"><FaPhone /> +62 0896-3087-3931</a></li>
           </ul>
           <div className="flex gap-x-5">
             <Link target='_blank' href='https://www.instagram.com/virn_el/'><FaInstagram className='text-xl hover:text-sky-400'  /></Link>

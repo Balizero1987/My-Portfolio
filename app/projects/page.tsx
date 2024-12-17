@@ -21,11 +21,32 @@ const roboto_mono = Roboto_Mono({ subsets: ["latin"] });
 function Projects() {
   const projects = [
     {
+      img: "project7.png",
+      language: ["HTML", "Tailwind", "Javascript"],
+      title: 'BlindMaze Game',
+      description: 'BlindMaze is a thrilling and challenging maze navigation game where players must guide their character through an intricate maze with limited visibility. In this game, the maze is only partially revealed, and the player must rely on their memory and quick reflexes to navigate through the maze and reach the exit before time runs out. Made by Javascript',
+      link: 'https://elvn-blindmaze-game.vercel.app/'
+    },
+    {
       img: "project1.png",
       language: ["HTML", "CSS", "Javascript"],
       title: 'Incriaysc',
       description: 'Incriaysc is a platform for searching any word using JavaScript. It is designed to help English learners easily understand the meaning of specific words. Built with JavaScript and Tailwind.',
       link: 'https://incriaysc.vercel.app/'
+    },
+    {
+      img: "project8.png",
+      language: ["Next JS"],
+      title: 'Indonesia Emas 2045',
+      description: "Indonesia Emas 2045 website is a collaboration project with my sister, Elvira. This project focuses on ui/ux design. Indonesia Emas 2045 website presents a vision to make Indonesia a developed and competitive nation by 2045, marking its 100th year of independence.",
+      link: 'https://indonesiaemas2045.vercel.app/'
+    },
+    {
+      img: "project9.png",
+      language: ["Next JS"],
+      title: 'Xavoslab',
+      description: "Xavoslab is a collaboration project with my sister, Elvira. XavosLab is an online learning platform offering high-quality courses in various fields like design, web development, digital marketing, data analysis, and more. ",
+      link: 'https://indonesiaemas2045.vercel.app/'
     },
     {
       img: "project2.png",
@@ -100,31 +121,33 @@ function Projects() {
     
   ]
   return (
-    <main className={`flex flex-col items-center justify-between px-7  md:px-32 py-16`}>
+    <main className={`flex flex-col items-center justify-between px-7 md:px-32 py-16`}>
       
       <div className="absolute z-[-1] left-1/4 before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-sky-300 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-sky-400 before:dark:opacity-10 after:dark:from-cyan-500 after:dark:via-[#68f0ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
       </div>
       <div className="content w-full md:w-3/4 flex flex-col gap-y-8">
         <div className="flex flex-col gap-y-2">
-          <h1 className={`font-bold text-6xl ${inter.className}`}>Projects</h1>
+          <h1 className={`font-bold text-5xl tracking-tighter ${inter.className}`}>Projects</h1>
         </div>
         <div className="grid grid-cols-1 gap-y-14">
           {projects.map((project, idx) => (
-            <div className="hover:cursor-pointer rounded-xl" key={idx}>
-              <div className="flex flex-col lg:flex-row gap-7">
-                <Image src={`/assets/${project.img}`} alt={project.title} className="w-[480px] h-[280px] object-cover rounded-xl" width={700} height={700} />
-                <div className="flex flex-col gap-y-0.5">
-                  <div className="flex gap-2 flex-wrap">
-                  {project.language.map((v, idx) => (
-                    <p className="dark:bg-glass bg-gray-100 text-sky-400 w-fit py-1.5 dark:text-sky-400 px-3.5 rounded-full font-bold" key={idx}>{v}</p>
-                  ))}
+            <Link href={project.link} key={idx} target="_blank" className="hover:bg-glass2 hover:p-6 hover:rounded-lg">
+              <div className="rounded-xl" key={idx}>
+                <div className="flex flex-col lg:flex-row gap-7">
+                  <Image src={`/assets/${project.img}`} alt={project.title} className="w-[480px] h-[280px] object-cover rounded-xl" width={480} height={280} />
+                  <div className="flex flex-col gap-y-0.5">
+                    <div className="flex gap-2 flex-wrap">
+                    {project.language.map((v, idx) => (
+                      <p className="dark:bg-glass bg-gray-100 text-sky-400 w-fit py-1.5 dark:text-sky-400 px-3.5 rounded-full font-bold" key={idx}>{v}</p>
+                    ))}
+                    </div>
+                    <h1 className={`font-bold text-[32px] mt-1.5 tracking-tighter hover:underline hover:decoration-sky-400/70 ${inter.className}`}>{project.title}</h1>
+                    <p className="text-base tracking-tight">{project.description}</p>
+                    <Button variant="default" className="w-fit mt-3 text-md hover:bg-sky-400 hover:text-white bg-glass text-sky-400"><Link href={project.link} target="_blank" className="flex gap-x-2 justify-center items-center"><FaLink />Demo</Link></Button>
                   </div>
-                  <h1 className={`font-black text-[30px] ${inter.className}`}>{project.title}</h1>
-                  <p className="text-base">{project.description}</p>
-                  <Button variant="default" className="w-fit mt-3 text-md hover:bg-sky-400 hover:text-white bg-glass text-sky-400"><Link href={project.link} target="_blank" className="flex gap-x-2 justify-center items-center"><FaLink />Demo</Link></Button>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       

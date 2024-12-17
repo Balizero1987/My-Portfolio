@@ -75,7 +75,7 @@ const NavigationBar = () => {
                     
                     {nav_link.map((data, idx) => (
                       <SheetClose asChild key={idx}>
-                        <Link href={data.link} className={`font-medium  ${pathname == data.link ? 'text-sky-400' : ''}`}><span>{idx + 1}.</span>{data.title}</Link>
+                        <Link href={data.link} className={`font-medium tracking-tighter ${pathname == data.link ? 'text-sky-400' : ''}`}><span>{idx + 1}.</span>{data.title}</Link>
                       </SheetClose>
                     ))}
                   
