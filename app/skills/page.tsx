@@ -10,6 +10,8 @@ import { TbBrandLaravel } from "react-icons/tb";
 import { SiAdobexd, SiAdobephotoshop, SiPhotobucket } from "react-icons/si";
 import { Icon } from '@iconify/react';
 import { FaGit } from "react-icons/fa6";
+import { TbBrandKotlin } from "react-icons/tb";
+
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -46,6 +48,10 @@ function Skills() {
       title: 'C#',
     },
     {
+      icon: <TbBrandKotlin size={30} color="#b729ea" />,
+      title: 'Kotlin',
+    },
+    {
       icon: <FaBootstrap size={30} color="7811f7" />,
       title: 'Bootstrap',
     },
@@ -69,6 +75,7 @@ function Skills() {
       icon: <SiAdobephotoshop size={30} color="37abff" />,
       title: 'Photoshop',
     },
+    
   ]
   return (
     <main className={`flex flex-col items-center justify-between px-7  md:px-32 py-16 overflow-hidden`}>
