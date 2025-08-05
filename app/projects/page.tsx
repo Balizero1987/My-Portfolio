@@ -21,11 +21,32 @@ const roboto_mono = Roboto_Mono({ subsets: ["latin"] });
 function Projects() {
   const projects = [
     {
+      img: "project10.webp",
+      language: ["Laravel 12", "Tailwind"],
+      title: 'NVitio',
+      description: "NVitio is a web-based platform designed to create and send digital invitations seamlessly. Whether you're planning a wedding, birthday, corporate event, or any special occasion, NVitio offers a wide range of customizable invitation templates that can be personalized to match your event's theme.",
+      link: 'https://nvitio.id/'
+    },
+    {
+      img: "project11.png",
+      language: ["Laravel 12", "React"],
+      title: 'Vn Production',
+      description: "Vn Production is a dynamic and innovative project specializing in sponsorship management and offering top-tier studio services. With a deep understanding of the entertainment and media landscape, Vn Production connects brands with tailored sponsorship opportunities, creating meaningful partnerships that amplify brand visibility and engagement.",
+      link: '#'
+    },
+    {
       img: "project7.png",
-      language: ["HTML", "Tailwind", "Javascript"],
+      language: ["HTML", "Tailwind", "Javascript", "Canvas"],
       title: 'BlindMaze Game',
       description: 'BlindMaze is a thrilling and challenging maze navigation game where players must guide their character through an intricate maze with limited visibility. In this game, the maze is only partially revealed, and the player must rely on their memory and quick reflexes to navigate through the maze and reach the exit before time runs out. Made by Javascript',
       link: 'https://elvn-blindmaze-game.vercel.app/'
+    },
+    {
+      img: "project5.png",
+      language: ["Next JS"],
+      title: 'My Portfolio',
+      description: "This is my portfolio, where I showcase my projects and skills in web development and programming. If you'd like to get in touch, feel free to contact me. I'm always open to discussing new opportunities, collaborations, or simply sharing knowledge.",
+      link: 'https://elvina.vercel.app/'
     },
     {
       img: "project1.png",
@@ -46,7 +67,7 @@ function Projects() {
       language: ["Next JS"],
       title: 'Xavoslab',
       description: "Xavoslab is a collaboration project with my sister, Elvira. XavosLab is an online learning platform offering high-quality courses in various fields like design, web development, digital marketing, data analysis, and more. ",
-      link: 'https://indonesiaemas2045.vercel.app/'
+      link: 'https://xavoslab.vercel.app/'
     },
     {
       img: "project2.png",
@@ -70,13 +91,6 @@ function Projects() {
       link: 'https://egithubtracker.vercel.app/'
     },
     {
-      img: "project5.png",
-      language: ["Next JS"],
-      title: 'My Portfolio',
-      description: "This is my portfolio, where I showcase my projects and skills in web development and programming. If you'd like to get in touch, feel free to contact me. I'm always open to discussing new opportunities, collaborations, or simply sharing knowledge.",
-      link: 'https://elvina.vercel.app/'
-    },
-    {
       img: "project6.png",
       language: ["HTML", "CSS", "Javascript"],
       title: 'Engxzu, English Learning Platform',
@@ -89,13 +103,6 @@ function Projects() {
       title: 'ElMovie',
       description: 'This is one of my posts on Dribble.',
       link: 'https://dribbble.com/shots/18497469-ElMovie-Movie-Dashboard-Design'
-    },
-    {
-      img: "design2.png",
-      language: ["UI/UX Design"],
-      title: 'Shoes App',
-      description: 'This is one of my posts on Dribble. ',
-      link: 'https://dribbble.com/shots/17081283-Shoes-App-Mobile-Design'
     },
     {
       img: "design2.png",
@@ -118,7 +125,6 @@ function Projects() {
       description: 'This is one of my posts on Dribble. ',
       link: 'https://dribbble.com/shots/20269467-Online-Course-App'
     },
-    
   ]
   return (
     <main className={`flex flex-col items-center justify-between px-7 md:px-32 py-16`}>
@@ -129,21 +135,21 @@ function Projects() {
         <div className="flex flex-col gap-y-2">
           <h1 className={`font-bold text-5xl tracking-tighter ${inter.className}`}>Projects</h1>
         </div>
-        <div className="grid grid-cols-1 gap-y-14">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-7 gap-y-14">
           {projects.map((project, idx) => (
-            <Link href={project.link} key={idx} target="_blank" className="hover:bg-glass2 hover:p-6 hover:rounded-lg">
+            <Link href={project.link} key={idx} target="_blank" className="bg-glass2 p-6 rounded-lg">
               <div className="rounded-xl" key={idx}>
-                <div className="flex flex-col lg:flex-row gap-7">
-                  <Image src={`/assets/${project.img}`} alt={project.title} className="w-[480px] h-[280px] object-cover rounded-xl" width={480} height={280} />
+                <div className="flex flex-col">
+                  <Image src={`/assets/${project.img}`} alt={project.title} className="w-full h-[270px] object-cover rounded-xl" width={480} height={280} />
                   <div className="flex flex-col gap-y-0.5">
-                    <div className="flex gap-2 flex-wrap">
+                    <div className="flex gap-2 flex-wrap mt-3">
                     {project.language.map((v, idx) => (
                       <p className="dark:bg-glass bg-gray-100 text-sky-400 w-fit py-1.5 dark:text-sky-400 px-3.5 rounded-full font-bold" key={idx}>{v}</p>
                     ))}
                     </div>
-                    <h1 className={`font-bold text-[32px] mt-1.5 tracking-tighter hover:underline hover:decoration-sky-400/70 ${inter.className}`}>{project.title}</h1>
+                    <h1 className={`font-bold text-[25px] mt-1.5 tracking-tighter hover:underline hover:decoration-sky-400/70 ${inter.className}`}>{project.title}</h1>
                     <p className="text-base tracking-tight">{project.description}</p>
-                    <Button variant="default" className="w-fit mt-3 text-md hover:bg-sky-400 hover:text-white bg-glass text-sky-400"><Link href={project.link} target="_blank" className="flex gap-x-2 justify-center items-center"><FaLink />Demo</Link></Button>
+                    <Button variant="default" className="w-fit mt-3 text-sm hover:bg-sky-400 hover:text-white bg-glass text-sky-400"><Link href={project.link} target="_blank" className="flex gap-x-2 justify-center items-center"><FaLink />Demo</Link></Button>
                   </div>
                 </div>
               </div>

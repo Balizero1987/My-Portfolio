@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Inter, Roboto_Mono } from "next/font/google";
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaLongArrowAltRight, FaWordpress } from "react-icons/fa";
 import Link from "next/link";
 
 import { FaReact, FaPhp, FaHtml5, FaCss3Alt, FaBootstrap, FaFigma, FaGitSquare } from "react-icons/fa";
@@ -58,6 +58,10 @@ function Skills() {
     {
       icon: <RiTailwindCssFill size={30} color="38bdf8" />,
       title: 'Tailwind',
+    },
+    {
+      icon: <FaWordpress size={30} color="#005bb5" />,
+      title: 'Wordpress',
     },
     {
       icon: <FaFigma size={30} color="ea4c1d" />,

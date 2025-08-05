@@ -56,6 +56,10 @@ const NavigationBar = () => {
       link: "/projects"
     },
     {
+      title: "achievements",
+      link: "/achievements"
+    },
+    {
       title: "contact",
       link: "/contact"
     }

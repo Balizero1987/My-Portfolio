@@ -50,7 +50,7 @@ const config: Config = {
   				foreground: 'hsl(var(--destructive-foreground))'
   			},
 				glass: 'rgba(255, 255, 255, 0.15)',
-				glass2: 'rgba(255, 255, 255, 0.08)',
+				glass2: 'rgba(255, 255, 255, 0.1)',
   			border: 'hsl(var(--border))',
   			input: 'hsl(var(--input))',
   			ring: 'hsl(var(--ring))',
