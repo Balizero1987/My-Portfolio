@@ -8,7 +8,6 @@ import { FaInstagram, FaFacebookF, FaGithub, FaDribbble, FaDiscord } from "react
 import { FaXTwitter, FaPhone  } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
 import { Button } from "@/components/ui/button";
-import { send } from 'emailjs-com'
 
 const inter = Inter({ subsets: ["latin"] });
 const roboto_mono = Roboto_Mono({ subsets: ["latin"] });

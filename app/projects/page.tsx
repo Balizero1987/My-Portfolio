@@ -32,7 +32,7 @@ function Projects() {
       language: ["Laravel 12", "React"],
       title: 'Vn Production',
       description: "Vn Production is a dynamic and innovative project specializing in sponsorship management and offering top-tier studio services. With a deep understanding of the entertainment and media landscape, Vn Production connects brands with tailored sponsorship opportunities, creating meaningful partnerships that amplify brand visibility and engagement.",
-      link: '#'
+      link: 'https://github.com/elvinafirmansyah/VnProductionApp'
     },
     {
       img: "project7.png",

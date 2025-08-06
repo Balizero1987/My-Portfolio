@@ -25,14 +25,13 @@ function About() {
           <h1 className={`font-bold text-6xl tracking-tighter tracking-tighter ${inter.className}`}>Hello, I am Elvina</h1>
           <h3 className={`font-semibold text-2xl tracking-tight text-sky-400 ${inter.className}`}>
             <Typewriter
-                options={{
-                  strings: ['Full-Stack Developer', 'UI/UX Designer'],
-                  autoStart: true,
-                  loop: true,
-                }}
-              />
+              options={{
+                strings: ['Full-Stack Developer', 'UI/UX Designer'],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </h3>
-
         </div>
         <p className={`w-full text-lg tracking-tighter`}>I&apos;m Elvina Firmansyah. I&apos;m a Full-Stack Developer and UI/UX Designer based in Indonesia. I&apos;m passionate about coding, developing and designing various websites as well as working on projects related to web development and UI/UX design. I&apos;ve been coding for the past 2 years and have enjoyed every moment of it. My main focus is to create accessible knowledge and digital experiences both in my career and for the future.</p>
         <div className="flex flex-col gap-y-3">

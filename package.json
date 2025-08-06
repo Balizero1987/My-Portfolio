@@ -2,10 +2,12 @@
   "name": "second-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://elvina.genmutech.com",
   "scripts": {
-    "dev": "next dev",
+    "dev": "node server.js",
     "build": "next build",
     "start": "next start",
+    "start:custom": "NODE_ENV=production node server.js",
     "lint": "next lint"
   },
   "dependencies": {
@@ -19,7 +21,7 @@
     "@radix-ui/react-toast": "^1.2.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "emailjs-com": "^3.2.0",
+    "@emailjs/browser": "^3.12.1",
     "embla-carousel-react": "^8.2.0",
     "lucide-react": "^0.436.0",
     "next": "14.2.7",

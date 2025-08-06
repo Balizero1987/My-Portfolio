@@ -56,7 +56,7 @@ function Achievements() {
     },
     {
       img: "sertifikat3.png",
-      skills: ['Figma', 'Next JS'],
+      skills: ['Figma', 'Next JS', 'Shadcn UI'],
       medal: "🥈",
       title: '2nd Place in HIMIKA CUP PART-V 2024',
       description: "Indonesian Ministry of Education (Kemendikbud)",
@@ -64,7 +64,7 @@ function Achievements() {
     },
     {
       img: "sertifikat4.png",
-      skills: ['Figma', "Next JS"],
+      skills: ['Figma', "Next JS", "Shadcn UI"],
       medal: "🥉",
       title: '3rd Place in DE CODE Web Design Competition 2024',
       description: "Indonesian Ministry of Education (Kemendikbud)",
@@ -83,7 +83,6 @@ function Achievements() {
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-8 gap-x-7">
           {sertifikats.map((sertifikat, idx) => (
-            <Link href={sertifikat.link} key={idx} target="_blank" className="">
               <div className="rounded-xl" key={idx}>
                 <div className="flex flex-col gap-2">
                   <Image src={`/assets/${sertifikat.img}`} alt={sertifikat.title} className="w-[480px] h-[280px] object-cover rounded-xl" width={480} height={280} />
@@ -98,7 +97,6 @@ function Achievements() {
                   </div>
                 </div>
               </div>
-            </Link>
           ))}
         </div>
       
