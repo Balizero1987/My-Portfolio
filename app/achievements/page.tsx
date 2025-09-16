@@ -34,7 +34,7 @@ function Achievements() {
       img: "sertifikat5.jpg",
       medal: "🥇",
       skills: ['Laravel', 'React', 'Bootstrap', 'Wordpress'],
-      title: '1st Place in the Palembang City Student Skills Competition (LKS) 2025',
+      title: '1st Place in the Palembang City Student Skills Competition (LKS) 2025 - Web Technology',
       description: 'Indonesian Ministry of Education (Kemendikbud)',
       link: 'https://vinnews.vercel.app/'
     },
@@ -42,7 +42,7 @@ function Achievements() {
       img: "sertifikat1.jpg",
       medal: "🥈",
       skills: ['Laravel', 'HTML&CSS', 'Figma', 'Bootstrap', 'Javascript'],
-      title: '2nd Place in the South Sumatra Provincial Student Skills Competition (LKS) 2024',
+      title: '2nd Place in the South Sumatra Provincial Student Skills Competition (LKS) 2024 - Web Technology',
       description: 'Indonesian Ministry of Education (Kemendikbud)',
       link: 'https://elvn-blindmaze-game.vercel.app/'
     },
@@ -50,7 +50,7 @@ function Achievements() {
       img: "sertifikat2.jpg",
       skills: ['Laravel', 'React', 'Bootstrap', 'Wordpress'],
       medal: "🥇",
-      title: '1st Place in the Palembang City Student Skills Competition (LKS) 2024',
+      title: '1st Place in the Palembang City Student Skills Competition (LKS) 2024 - Web Technology',
       description: 'Indonesian Ministry of Education (Kemendikbud)',
       link: 'https://incriaysc.vercel.app/'
     },
@@ -58,7 +58,7 @@ function Achievements() {
       img: "sertifikat3.png",
       skills: ['Figma', 'Next JS', 'Shadcn UI'],
       medal: "🥈",
-      title: '2nd Place in HIMIKA CUP PART-V 2024',
+      title: '2nd Place in HIMIKA CUP PART-V 2024 - UI/UX Design',
       description: "Indonesian Ministry of Education (Kemendikbud)",
       link: 'https://indonesiaemas2045.vercel.app/'
     },
@@ -66,7 +66,7 @@ function Achievements() {
       img: "sertifikat4.png",
       skills: ['Figma', "Next JS", "Shadcn UI"],
       medal: "🥉",
-      title: '3rd Place in DE CODE Web Design Competition 2024',
+      title: '3rd Place in DE CODE Web Design Competition 2024 - UI/UX Design',
       description: "Indonesian Ministry of Education (Kemendikbud)",
       link: 'https://indonesiaemas2045.vercel.app/'
     },
