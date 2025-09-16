@@ -1,7 +1,7 @@
 'use client';
 import Image from "next/image";
 import { Inter, Roboto_Mono } from "next/font/google";
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { FaLongArrowAltRight, FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 import { FaInstagram, FaFacebookF, FaGithub, FaDribbble } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -16,8 +16,8 @@ const roboto_mono = Roboto_Mono({ subsets: ["latin"] });
 function About() {
 
   return (
-    <main className={`flex flex-col items-center justify-between px-7 md:px-32 py-[4.5rem] overflow-hidden`}>
-      
+    <main className={`flex flex-col items-center justify-between px-7 md:px-32 py-[4.2rem] overflow-hidden`}>
+
       <div className="absolute z-[-1] left-1/4 before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-sky-300 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-sky-400 before:dark:opacity-10 after:dark:from-cyan-500 after:dark:via-[#68f0ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
       </div>
       <div className="content w-full md:w-3/4 flex flex-col gap-y-6">
@@ -46,7 +46,8 @@ function About() {
           <Link target='_blank' href='https://m.facebook.com/elvina.firmansyah.50'><FaFacebookF className='text-xl hover:text-sky-400' /></Link>
           <Link target='_blank' href='https://twitter.com/elvina_one'><FaXTwitter  className='text-xl hover:text-sky-400'  /></Link>
           <Link target='_blank' href='https://github.com/elvinafirmansyah'><FaGithub className='text-xl hover:text-sky-400'/></Link>
-          <Link target='_blank' href='/'><FaDribbble  className='text-xl hover:text-sky-400' /></Link>
+          <Link target='_blank' href='https://dribbble.com/Elvina_Vin19'><FaDribbble  className='text-xl hover:text-sky-400' /></Link>
+          <Link target='_blank' href='https://www.linkedin.com/in/elvinafirmansyah/'><FaLinkedin  className='text-xl hover:text-sky-400' /></Link>
         </div>
       </div>
     </main>

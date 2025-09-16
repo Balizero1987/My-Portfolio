@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Inter, Roboto_Mono } from "next/font/google";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Link from "next/link";
-import { FaInstagram, FaFacebookF, FaGithub, FaDribbble, FaDiscord } from "react-icons/fa";
+import { FaInstagram, FaFacebookF, FaGithub, FaDribbble, FaDiscord, FaLinkedin } from "react-icons/fa";
 import { FaXTwitter, FaPhone  } from "react-icons/fa6";
 import { BiLogoGmail } from "react-icons/bi";
 import { Button } from "@/components/ui/button";
@@ -90,6 +90,7 @@ function Contact() {
             <Link target='_blank' href='https://github.com/elvinafirmansyah'><FaGithub className='text-xl hover:text-sky-400'/></Link>
             <Link target='_blank' href='https://dribbble.com/Elvina_Vin19'><FaDribbble  className='text-xl hover:text-sky-400' /></Link>
             <Link target='_blank' href='https://discordapp.com/users/902188905376415826'><FaDiscord  className='text-xl hover:text-sky-400' /></Link>
+            <Link target='_blank' href='https://www.linkedin.com/in/elvinafirmansyah/'><FaLinkedin  className='text-xl hover:text-sky-400' /></Link>
           </div>
         </div>
 
