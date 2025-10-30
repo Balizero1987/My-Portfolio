@@ -42,7 +42,7 @@ function About() {
           </Link>
         </div>
         <div className="flex gap-x-5">
-          <Link target='_blank' href='https://www.instagram.com/virn_el/'><FaInstagram className='text-xl hover:text-sky-400'  /></Link>
+          <Link target='_blank' href='https://www.instagram.com/vinelvn_/'><FaInstagram className='text-xl hover:text-sky-400'  /></Link>
           <Link target='_blank' href='https://m.facebook.com/elvina.firmansyah.50'><FaFacebookF className='text-xl hover:text-sky-400' /></Link>
           <Link target='_blank' href='https://twitter.com/elvina_one'><FaXTwitter  className='text-xl hover:text-sky-400'  /></Link>
           <Link target='_blank' href='https://github.com/elvinafirmansyah'><FaGithub className='text-xl hover:text-sky-400'/></Link>
